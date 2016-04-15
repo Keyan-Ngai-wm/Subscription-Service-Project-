@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url(http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=41228632);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+section {
+    color: mediumspringgreen;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:hover {
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+li a.active {
+    color: #000000;
+}
+
+
+/* Header Style */
+
+.hover-space,
+.hover-message,
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hover-space {
+    height: 70px;
+    z-index: 99;
+}
+
+.hover-space:hover header {
+    opacity: 1;
+    transition: 1s;
+}
+
+.hover-message {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeout 7s;
+    -webkit-animation: fadeout 7s;
+    -moz-animation: fadeout 7s;
+}
+
+header {
+    height: 70px;
+    background-color: #FFF;
+    text-align: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 2s;
+    -webkit-transition-delay: 2s;
+    animation: fadeout 4s;
+    -webkit-animation: fadeout 4s;
+    -moz-animation: fadeout 4s;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+
+header nav {
+    position: absolute;
+    right: 20px;
+    color: #CCC;
+}
+
+
+/* Keyframes */
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Other */
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #FFF;
+}
+
+footer p {
+    font-weight: 600;
+}
